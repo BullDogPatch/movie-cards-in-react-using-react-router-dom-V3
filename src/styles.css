@@ -2,6 +2,8 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  outline: 0;
+  font-size: 100%;
 }
 
 .App {
@@ -17,11 +19,14 @@ nav {
   align-items: center;
   padding: 0 16px;
   font-family: sans-serif;
+  /* font-size: 1.5rem; */
   border-bottom: 3px solid red;
 }
 
 nav h1 {
   color: white;
+  padding: 15px;
+  font-size: 1.3rem;
 }
 
 .nav-links {
@@ -30,30 +35,87 @@ nav h1 {
 }
 
 .link {
-  padding: 10px;
+  padding: 20px;
   color: white;
+  font-size: 1.3rem;
   text-decoration: none;
 }
+
+.movie-div {
+  width: 90%;
+  margin: 50px auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+
 .movie-card {
-  border: 1px solid black;
-  width: 45%;
+  border: 2px solid black;
+  background-color: lightgrey;
+  width: 40%;
   margin: 40px auto;
   text-align: center;
-  height: 350px;
+  /* height: 350px ; */
+  white-space: pre-wrap;
 }
 
 .movie-card h1 {
   color: rgb(30, 31, 32);
   padding: 20px;
+  font-size: 1.6rem;
+  font-family: sans-serif;
+  word-wrap: break-word;
 }
 
 .movie-card p {
   padding: 10px;
+  font-size: 1rem;
+  font-family: sans-serif;
+  word-wrap: break-word;
 }
 
-.movie-div {
-  width: 100%;
-  margin: 50px auto;
-  display: flex;
-  flex-wrap: wrap;
+.movie-card h3 {
+  font-family: sans-serif;
+  text-decoration: underline;
+  padding: 5px;
+}
+
+/* home page */
+
+.home-page h1 {
+  font-size: 1.6rem;
+  font-family: sans-serif;
+}
+
+.home-page {
+  width: 75%;
+  margin: 60px auto;
+  text-align: center;
+}
+
+.home-page button {
+  width: 100px;
+  margin: 30px;
+  padding: 10px;
+  background-color: #243447;
+  border: 2px solid red;
+  border-radius: 4px;
+  color: white;
+  cursor: pointer;
+}
+
+.home-page button:hover {
+  background-color: red;
+  color: #243447;
+  border: 2px solid #243447;
+}
+
+@media (max-width: 600px) {
+  .movie-div {
+    flex-direction: column;
+    margin: 20px auto;
+  }
+  .movie-card {
+    width: 95%;
+    margin: 15px auto;
+  }
 }

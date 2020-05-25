@@ -8,7 +8,7 @@ const HomePage = () => {
     history.push("/movie");
   };
   return (
-    <div>
+    <div className="home-page">
       <h1>Welcome to some of Craigs favourite Movies</h1>
       <button onClick={routeToMovies}>Movies</button>
     </div>
